@@ -15,6 +15,50 @@ enum TimerState {
 
 final class TimerView: WABaseInfoView {
     
+    private var elapsedTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = Resources.Strings.Session.elapsedTime
+        label.font = Resources.Fonts.helveticaRegular(with: 14)
+        label.textColor = Resources.Colors.inactive
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private var elapsedTimeValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "06:15"
+        label.font = Resources.Fonts.helveticaRegular(with: 46)
+        label.textColor = Resources.Colors.titleGrey
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private var remainingTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = Resources.Strings.Session.remainingTime
+        label.font = Resources.Fonts.helveticaRegular(with: 13)
+        label.textColor = Resources.Colors.inactive
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private var remainingTimeValueLabel: UILabel = {
+        let label = UILabel()
+        label.text = "12:45"
+        label.font = Resources.Fonts.helveticaRegular(with: 13)
+        label.textColor = Resources.Colors.titleGrey
+        label.textAlignment = .center
+        return label
+    }()
+    
+    private let timeStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fillProportionally
+        stackView.spacing = 10
+        return stackView
+    }()
+    
     private let progressView = ProgressView()
     
     private var timer = Timer()
@@ -85,6 +129,15 @@ extension TimerView {
     override func setupViews() {
        super.setupViews()
         addView(progressView)
+        addView(timeStackView)
+        [
+            elapsedTimeLabel,
+            elapsedTimeValueLabel,
+            remainingTimeLabel,
+            remainingTimeValueLabel
+        ].forEach {
+            timeStackView.addArrangedSubview($0)
+        }
     }
     
     
@@ -95,6 +148,10 @@ extension TimerView {
             progressView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 40),
             progressView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -40),
             progressView.heightAnchor.constraint(equalTo: progressView.widthAnchor),
+            progressView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -40),
+            
+            timeStackView.centerYAnchor.constraint(equalTo: progressView.centerYAnchor),
+            timeStackView.centerXAnchor.constraint(equalTo: progressView.centerXAnchor)
             
         ])
     }
