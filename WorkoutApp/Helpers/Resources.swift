@@ -17,6 +17,7 @@ enum Resources {
         static let secondary = UIColor(hexString: "#F0F3FF")
         
         static let titleGrey = UIColor(hexString: "#545C77")
+        static let subtitleGrey = UIColor(hexString: "#D8D8D8")
     }
     
     enum Strings {
@@ -34,6 +35,9 @@ enum Resources {
             
             static let elapsedTime = "Elapsed Time"
             static let remainingTime = "Remaining Time"
+            
+            static let completedStr = "COMPLETED"
+            static let remainingStr = "REMAINING"
         }
         
         enum Progress {

@@ -11,7 +11,7 @@ class SessionController: BaseController {
     
     private let timerView = TimerView()
     
-    private let timerDuration: Double = 3615
+    private let timerDuration: Double = 5
     
     override func navBarLeftButtonHandler() {
         if timerView.state == .isStopped {
