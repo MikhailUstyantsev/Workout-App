@@ -13,7 +13,7 @@ class WABaseView: UIView {
         super.init(frame: frame)
         setupViews()
         constraintViews()
-        configureViews()
+        configureAppearance()
     }
     
     required init?(coder: NSCoder) {
@@ -25,5 +25,7 @@ class WABaseView: UIView {
 @objc extension WABaseView {
     func setupViews() {}
     func constraintViews() {}
-    func configureViews() {}
+    func configureAppearance() {
+        backgroundColor = .systemBackground
+    }
 }

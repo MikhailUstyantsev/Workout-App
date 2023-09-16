@@ -17,34 +17,34 @@ final class TimerView: WABaseInfoView {
     
     private var elapsedTimeLabel: UILabel = {
         let label = UILabel()
-        label.text = Resources.Strings.Session.elapsedTime
-        label.font = Resources.Fonts.helveticaRegular(with: 14)
-        label.textColor = Resources.Colors.inactive
+        label.text = R.Strings.Session.elapsedTime
+        label.font = R.Fonts.helveticaRegular(with: 14)
+        label.textColor = R.Colors.inactive
         label.textAlignment = .center
         return label
     }()
     
     private var elapsedTimeValueLabel: UILabel = {
         let label = UILabel()
-        label.font = Resources.Fonts.helveticaRegular(with: 46)
-        label.textColor = Resources.Colors.titleGrey
+        label.font = R.Fonts.helveticaRegular(with: 46)
+        label.textColor = R.Colors.titleGrey
         label.textAlignment = .center
         return label
     }()
     
     private var remainingTimeLabel: UILabel = {
         let label = UILabel()
-        label.text = Resources.Strings.Session.remainingTime
-        label.font = Resources.Fonts.helveticaRegular(with: 13)
-        label.textColor = Resources.Colors.inactive
+        label.text = R.Strings.Session.remainingTime
+        label.font = R.Fonts.helveticaRegular(with: 13)
+        label.textColor = R.Colors.inactive
         label.textAlignment = .center
         return label
     }()
     
     private var remainingTimeValueLabel: UILabel = {
         let label = UILabel()
-        label.font = Resources.Fonts.helveticaRegular(with: 13)
-        label.textColor = Resources.Colors.titleGrey
+        label.font = R.Fonts.helveticaRegular(with: 13)
+        label.textColor = R.Colors.titleGrey
         label.textAlignment = .center
         return label
     }()
@@ -62,7 +62,7 @@ final class TimerView: WABaseInfoView {
     
     private let bottomSeparatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = Resources.Colors.separator
+        view.backgroundColor = R.Colors.separator
         return view
     }()
     
@@ -94,8 +94,8 @@ final class TimerView: WABaseInfoView {
         
         remainingTimeValueLabel.text = getDisplayedString(from: Int(duration) - Int(tempCurrentValue))
         
-        completedPercentView.configure(with: Resources.Strings.Session.completedStr, and: roundedPercent)
-        remainingPercentView.configure(with: Resources.Strings.Session.remainingStr, and: 100 - roundedPercent)
+        completedPercentView.configure(with: R.Strings.Session.completedStr, and: roundedPercent)
+        remainingPercentView.configure(with: R.Strings.Session.remainingStr, and: 100 - roundedPercent)
         
         progressView.drawProgress(with: CGFloat(percent))
     }
@@ -197,8 +197,8 @@ extension TimerView {
     }
     
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
         
     }
     

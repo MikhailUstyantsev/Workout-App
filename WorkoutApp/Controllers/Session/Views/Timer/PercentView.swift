@@ -22,16 +22,16 @@ extension TimerView {
         
         private let percentLabel: UILabel = {
             let label = UILabel()
-            label.font = Resources.Fonts.helveticaRegular(with: 23)
-            label.textColor = Resources.Colors.titleGrey
+            label.font = R.Fonts.helveticaRegular(with: 23)
+            label.textColor = R.Colors.titleGrey
             label.textAlignment = .center
             return label
         }()
         
         private let subtitleLabel: UILabel = {
             let label = UILabel()
-            label.font = Resources.Fonts.helveticaRegular(with: 10)
-            label.textColor = Resources.Colors.inactive
+            label.font = R.Fonts.helveticaRegular(with: 10)
+            label.textColor = R.Colors.inactive
             label.textAlignment = .center
             return label
         }()
@@ -62,8 +62,8 @@ extension TimerView.PercentView {
         ])
     }
     
-    override func configureViews() {
-      super.configureViews()
+    override func configureAppearance() {
+      super.configureAppearance()
         
     }
     

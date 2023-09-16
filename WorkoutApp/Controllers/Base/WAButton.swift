@@ -76,16 +76,16 @@ private extension WAButton {
         
         switch type {
         case .primary:
-            label.textColor = Resources.Colors.inactive
-            iconView.tintColor = Resources.Colors.inactive
-            label.font = Resources.Fonts.helveticaRegular(with: 13)
+            label.textColor = R.Colors.inactive
+            iconView.tintColor = R.Colors.inactive
+            label.font = R.Fonts.helveticaRegular(with: 13)
             
         case .secondary:
-            backgroundColor = Resources.Colors.secondary
+            backgroundColor = R.Colors.secondary
             layer.cornerRadius = 14
-            label.textColor = Resources.Colors.active
-            label.font = Resources.Fonts.helveticaRegular(with: 15)
-            iconView.tintColor = Resources.Colors.active
+            label.textColor = R.Colors.active
+            label.font = R.Fonts.helveticaRegular(with: 15)
+            iconView.tintColor = R.Colors.active
         }
         
        
@@ -93,7 +93,7 @@ private extension WAButton {
         
         label.textAlignment = .center
         
-        iconView.image = Resources.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
+        iconView.image = R.Images.Common.downArrow?.withRenderingMode(.alwaysTemplate)
         
     }
     

@@ -11,17 +11,17 @@ class WABaseInfoView: WABaseView {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = Resources.Fonts.helveticaRegular(with: 13)
-        label.textColor = Resources.Colors.inactive
+        label.font = R.Fonts.helveticaRegular(with: 13)
+        label.textColor = R.Colors.inactive
         return label
     }()
 
     private let button = WAButton(with: .primary)
     
-    private let contentView: UIView = {
+    let contentView: UIView = {
         let view = UIView()
         view.backgroundColor = .systemBackground
-        view.layer.borderColor = Resources.Colors.separator.cgColor
+        view.layer.borderColor = R.Colors.separator.cgColor
         view.layer.borderWidth = 1
         view.layer.cornerRadius = 5
         return view
@@ -80,8 +80,8 @@ extension WABaseInfoView {
         ])
     }
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .clear
     }
     

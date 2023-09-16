@@ -7,7 +7,7 @@
 
 import UIKit
 
-enum Resources {
+enum R {
     enum Colors {
         static let active = UIColor(hexString: "#437BFE")
         static let inactive = UIColor(hexString: "#929DA5")
@@ -38,6 +38,14 @@ enum Resources {
             
             static let completedStr = "COMPLETED"
             static let remainingStr = "REMAINING"
+            
+            static let workoutStats = "Workout stats"
+            static let averagePace = "Average pace"
+            static let heartRate = "Heart rate"
+            static let totalDistance = "Total distance"
+            static let totalSteps = "Total steps"
+            
+            static let stepsCounter = "Steps Counter"
         }
         
         enum Progress {
@@ -67,6 +75,17 @@ enum Resources {
             static let downArrow = UIImage(named: "down_arrow")
             static let add = UIImage(named: "add_button")
         }
+        
+        
+        enum Session {
+            enum Stats {
+                static let averagePace = UIImage(named: "stats_averagePace")
+                static let heartRate = UIImage(named: "stats_heartRate")
+                static let totalDistance = UIImage(named: "stats_totalDistance")
+                static let totalSteps = UIImage(named: "stats_totalSteps")
+            }
+        }
+        
         
     }
     

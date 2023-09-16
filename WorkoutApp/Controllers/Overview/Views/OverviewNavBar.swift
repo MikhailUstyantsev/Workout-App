@@ -18,7 +18,7 @@ final class OverviewNavBar: WABaseView {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        addBottomBorder(with: Resources.Colors.separator, height: 1)
+        addBottomBorder(with: R.Colors.separator, height: 1)
     }
     
     func addAllWorkoutsAction(_ action: Selector, with target: Any?) {
@@ -70,16 +70,16 @@ extension OverviewNavBar {
         
     }
     
-    override func configureViews() {
-        super.configureViews()
+    override func configureAppearance() {
+        super.configureAppearance()
         backgroundColor = .systemBackground
         
-        titleLabel.text = Resources.Strings.NavBar.overview
-        titleLabel.textColor = Resources.Colors.titleGrey
-        titleLabel.font = Resources.Fonts.helveticaRegular(with: 22)
+        titleLabel.text = R.Strings.NavBar.overview
+        titleLabel.textColor = R.Colors.titleGrey
+        titleLabel.font = R.Fonts.helveticaRegular(with: 22)
         
-        allWorkoutsButton.setTitle(Resources.Strings.Overview.allWorkoutsButton)
-        addButton.setImage(Resources.Images.Common.add, for: .normal)
+        allWorkoutsButton.setTitle(R.Strings.Overview.allWorkoutsButton)
+        addButton.setImage(R.Images.Common.add, for: .normal)
     }
     
     
