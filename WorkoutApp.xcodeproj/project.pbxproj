@@ -36,6 +36,7 @@
 		836CCCFC2AB37557003F6409 /* PercentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CCCFB2AB37557003F6409 /* PercentView.swift */; };
 		836CCD022AB4D6D3003F6409 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CCD012AB4D6D3003F6409 /* StatsView.swift */; };
 		836CCD052AB4D780003F6409 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CCD042AB4D780003F6409 /* StatsItemView.swift */; };
+		83B7035C2ABFE73200F6E443 /* DailyPerfomanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7035B2ABFE73200F6E443 /* DailyPerfomanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		836CCCFB2AB37557003F6409 /* PercentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentView.swift; sourceTree = "<group>"; };
 		836CCD012AB4D6D3003F6409 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		836CCD042AB4D780003F6409 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
+		83B7035B2ABFE73200F6E443 /* DailyPerfomanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerfomanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +212,7 @@
 		836CCCDC2AA8FE76003F6409 /* Progress */ = {
 			isa = PBXGroup;
 			children = (
+				83B703592ABFE6DA00F6E443 /* Views */,
 				836CCCE02AA8FEBB003F6409 /* ProgressController.swift */,
 			);
 			path = Progress;
@@ -296,6 +299,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		83B703592ABFE6DA00F6E443 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83B7035A2ABFE70100F6E443 /* Performance */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		83B7035A2ABFE70100F6E443 /* Performance */ = {
+			isa = PBXGroup;
+			children = (
+				83B7035B2ABFE73200F6E443 /* DailyPerfomanceView.swift */,
+			);
+			path = Performance;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,6 +391,7 @@
 				836CCCC92AA8E174003F6409 /* TabBarController.swift in Sources */,
 				836CCCE82AAA4D26003F6409 /* OverviewNavBar.swift in Sources */,
 				836CCCD82AA8F2E8003F6409 /* UIView + ext.swift in Sources */,
+				83B7035C2ABFE73200F6E443 /* DailyPerfomanceView.swift in Sources */,
 				835260972AB5790A00F8F569 /* WABarsView.swift in Sources */,
 				836CCCD12AA8EDA6003F6409 /* NavBarController.swift in Sources */,
 				836CCCD42AA8F056003F6409 /* BaseController.swift in Sources */,
