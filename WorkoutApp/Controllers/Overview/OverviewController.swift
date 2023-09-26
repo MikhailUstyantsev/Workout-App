@@ -43,6 +43,9 @@ extension OverviewController {
         
         [navBar].forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
         
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE, MMMM dd"
+        
     }
     
 }

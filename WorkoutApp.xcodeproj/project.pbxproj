@@ -42,6 +42,7 @@
 		83B703652AC0942B00F6E443 /* WALineChartYAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B703642AC0942B00F6E443 /* WALineChartYAxisView.swift */; };
 		83B703672AC09D0D00F6E443 /* WALineChartXAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B703662AC09D0D00F6E443 /* WALineChartXAxisView.swift */; };
 		83B703692AC0A9A700F6E443 /* WAChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B703682AC0A9A700F6E443 /* WAChartView.swift */; };
+		83B7036D2AC330AB00F6E443 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7036C2AC330AB00F6E443 /* SectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +83,7 @@
 		83B703642AC0942B00F6E443 /* WALineChartYAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALineChartYAxisView.swift; sourceTree = "<group>"; };
 		83B703662AC09D0D00F6E443 /* WALineChartXAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALineChartXAxisView.swift; sourceTree = "<group>"; };
 		83B703682AC0A9A700F6E443 /* WAChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartView.swift; sourceTree = "<group>"; };
+		83B7036C2AC330AB00F6E443 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +243,7 @@
 		836CCCE42AAA29B5003F6409 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				83B7036A2AC3307700F6E443 /* CollectionView */,
 				836CCCEB2AAB9152003F6409 /* WeekView */,
 				836CCCE72AAA4D26003F6409 /* OverviewNavBar.swift */,
 			);
@@ -354,6 +357,22 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		83B7036A2AC3307700F6E443 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				83B7036B2AC3308D00F6E443 /* Views */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		83B7036B2AC3308D00F6E443 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83B7036C2AC330AB00F6E443 /* SectionHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -451,6 +470,7 @@
 				836CCCCC2AA8E21A003F6409 /* UIColor + ext.swift in Sources */,
 				835260952AB5786A00F8F569 /* WABarView.swift in Sources */,
 				836CCCEA2AAA4DC4003F6409 /* WABaseView.swift in Sources */,
+				83B7036D2AC330AB00F6E443 /* SectionHeaderView.swift in Sources */,
 				836CCCEF2AAB9383003F6409 /* WeekdayView.swift in Sources */,
 				836CCD022AB4D6D3003F6409 /* StatsView.swift in Sources */,
 				83B703692AC0A9A700F6E443 /* WAChartView.swift in Sources */,
