@@ -37,6 +37,11 @@
 		836CCD022AB4D6D3003F6409 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CCD012AB4D6D3003F6409 /* StatsView.swift */; };
 		836CCD052AB4D780003F6409 /* StatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CCD042AB4D780003F6409 /* StatsItemView.swift */; };
 		83B7035C2ABFE73200F6E443 /* DailyPerfomanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7035B2ABFE73200F6E443 /* DailyPerfomanceView.swift */; };
+		83B7035F2ABFF90C00F6E443 /* MonthlyPerformanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B7035E2ABFF90C00F6E443 /* MonthlyPerformanceView.swift */; };
+		83B703632ABFFB7200F6E443 /* WALineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B703622ABFFB7200F6E443 /* WALineChartView.swift */; };
+		83B703652AC0942B00F6E443 /* WALineChartYAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B703642AC0942B00F6E443 /* WALineChartYAxisView.swift */; };
+		83B703672AC09D0D00F6E443 /* WALineChartXAxisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B703662AC09D0D00F6E443 /* WALineChartXAxisView.swift */; };
+		83B703692AC0A9A700F6E443 /* WAChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B703682AC0A9A700F6E443 /* WAChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		836CCD012AB4D6D3003F6409 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		836CCD042AB4D780003F6409 /* StatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsItemView.swift; sourceTree = "<group>"; };
 		83B7035B2ABFE73200F6E443 /* DailyPerfomanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyPerfomanceView.swift; sourceTree = "<group>"; };
+		83B7035E2ABFF90C00F6E443 /* MonthlyPerformanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyPerformanceView.swift; sourceTree = "<group>"; };
+		83B703622ABFFB7200F6E443 /* WALineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALineChartView.swift; sourceTree = "<group>"; };
+		83B703642AC0942B00F6E443 /* WALineChartYAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALineChartYAxisView.swift; sourceTree = "<group>"; };
+		83B703662AC09D0D00F6E443 /* WALineChartXAxisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALineChartXAxisView.swift; sourceTree = "<group>"; };
+		83B703682AC0A9A700F6E443 /* WAChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				836CCCF22AAE1FC5003F6409 /* Views */,
+				836CCCE92AAA4DC4003F6409 /* WABaseView.swift */,
+				836CCCF32AAE1FEC003F6409 /* WABaseInfoView.swift */,
 				836CCCE52AAA29F4003F6409 /* WAButton.swift */,
 				836CCCC82AA8E174003F6409 /* TabBarController.swift */,
 				836CCCD02AA8EDA6003F6409 /* NavBarController.swift */,
@@ -247,9 +259,8 @@
 		836CCCF22AAE1FC5003F6409 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				83B703602ABFFB2F00F6E443 /* WALineChartView */,
 				835260922AB5781800F8F569 /* WABarsView */,
-				836CCCE92AAA4DC4003F6409 /* WABaseView.swift */,
-				836CCCF32AAE1FEC003F6409 /* WABaseInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,17 +313,45 @@
 		83B703592ABFE6DA00F6E443 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				83B7035A2ABFE70100F6E443 /* Performance */,
+				83B7035A2ABFE70100F6E443 /* DailyPerformance */,
+				83B7035D2ABFF8E000F6E443 /* MonthlyPerformance */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		83B7035A2ABFE70100F6E443 /* Performance */ = {
+		83B7035A2ABFE70100F6E443 /* DailyPerformance */ = {
 			isa = PBXGroup;
 			children = (
 				83B7035B2ABFE73200F6E443 /* DailyPerfomanceView.swift */,
 			);
-			path = Performance;
+			path = DailyPerformance;
+			sourceTree = "<group>";
+		};
+		83B7035D2ABFF8E000F6E443 /* MonthlyPerformance */ = {
+			isa = PBXGroup;
+			children = (
+				83B7035E2ABFF90C00F6E443 /* MonthlyPerformanceView.swift */,
+			);
+			path = MonthlyPerformance;
+			sourceTree = "<group>";
+		};
+		83B703602ABFFB2F00F6E443 /* WALineChartView */ = {
+			isa = PBXGroup;
+			children = (
+				83B703612ABFFB4D00F6E443 /* Views */,
+				83B703622ABFFB7200F6E443 /* WALineChartView.swift */,
+			);
+			path = WALineChartView;
+			sourceTree = "<group>";
+		};
+		83B703612ABFFB4D00F6E443 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				83B703642AC0942B00F6E443 /* WALineChartYAxisView.swift */,
+				83B703662AC09D0D00F6E443 /* WALineChartXAxisView.swift */,
+				83B703682AC0A9A700F6E443 /* WAChartView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,6 +429,7 @@
 				836CCCE32AA8FEEF003F6409 /* SettingsController.swift in Sources */,
 				836CCCC92AA8E174003F6409 /* TabBarController.swift in Sources */,
 				836CCCE82AAA4D26003F6409 /* OverviewNavBar.swift in Sources */,
+				83B7035F2ABFF90C00F6E443 /* MonthlyPerformanceView.swift in Sources */,
 				836CCCD82AA8F2E8003F6409 /* UIView + ext.swift in Sources */,
 				83B7035C2ABFE73200F6E443 /* DailyPerfomanceView.swift in Sources */,
 				835260972AB5790A00F8F569 /* WABarsView.swift in Sources */,
@@ -398,6 +438,8 @@
 				836CCCDF2AA8FE99003F6409 /* SessionController.swift in Sources */,
 				836CCCF42AAE1FEC003F6409 /* WABaseInfoView.swift in Sources */,
 				836CCCF72AAF86E0003F6409 /* TimerView.swift in Sources */,
+				83B703652AC0942B00F6E443 /* WALineChartYAxisView.swift in Sources */,
+				83B703672AC09D0D00F6E443 /* WALineChartXAxisView.swift in Sources */,
 				836CCCFA2AAF87C8003F6409 /* ProgressView.swift in Sources */,
 				836CCCE62AAA29F4003F6409 /* WAButton.swift in Sources */,
 				835260912AB576C600F8F569 /* StepsView.swift in Sources */,
@@ -411,6 +453,8 @@
 				836CCCEA2AAA4DC4003F6409 /* WABaseView.swift in Sources */,
 				836CCCEF2AAB9383003F6409 /* WeekdayView.swift in Sources */,
 				836CCD022AB4D6D3003F6409 /* StatsView.swift in Sources */,
+				83B703692AC0A9A700F6E443 /* WAChartView.swift in Sources */,
+				83B703632ABFFB7200F6E443 /* WALineChartView.swift in Sources */,
 				836CCCD62AA8F1E7003F6409 /* OverviewController.swift in Sources */,
 				836CCCB52AA8DF88003F6409 /* SceneDelegate.swift in Sources */,
 			);
