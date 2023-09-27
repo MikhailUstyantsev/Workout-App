@@ -10,6 +10,7 @@
 		835260912AB576C600F8F569 /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835260902AB576C600F8F569 /* StepsView.swift */; };
 		835260952AB5786A00F8F569 /* WABarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835260942AB5786A00F8F569 /* WABarView.swift */; };
 		835260972AB5790A00F8F569 /* WABarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835260962AB5790A00F8F569 /* WABarsView.swift */; };
+		836805272AC4B41400DB477B /* TrainingCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836805262AC4B41400DB477B /* TrainingCellView.swift */; };
 		836CCCB32AA8DF88003F6409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CCCB22AA8DF88003F6409 /* AppDelegate.swift */; };
 		836CCCB52AA8DF88003F6409 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836CCCB42AA8DF88003F6409 /* SceneDelegate.swift */; };
 		836CCCBC2AA8DF89003F6409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836CCCBB2AA8DF89003F6409 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		835260902AB576C600F8F569 /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
 		835260942AB5786A00F8F569 /* WABarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarView.swift; sourceTree = "<group>"; };
 		835260962AB5790A00F8F569 /* WABarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WABarsView.swift; sourceTree = "<group>"; };
+		836805262AC4B41400DB477B /* TrainingCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingCellView.swift; sourceTree = "<group>"; };
 		836CCCAF2AA8DF88003F6409 /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		836CCCB22AA8DF88003F6409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		836CCCB42AA8DF88003F6409 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -153,8 +155,8 @@
 		836CCCC72AA8E045003F6409 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				836CCCBB2AA8DF89003F6409 /* Assets.xcassets */,
 				836CCCBD2AA8DF89003F6409 /* LaunchScreen.storyboard */,
+				836CCCBB2AA8DF89003F6409 /* Assets.xcassets */,
 				836CCCC02AA8DF89003F6409 /* Info.plist */,
 			);
 			path = SupportingFiles;
@@ -369,6 +371,7 @@
 			isa = PBXGroup;
 			children = (
 				83B7036C2AC330AB00F6E443 /* SectionHeaderView.swift */,
+				836805262AC4B41400DB477B /* TrainingCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -449,6 +452,7 @@
 				836CCCC92AA8E174003F6409 /* TabBarController.swift in Sources */,
 				836CCCE82AAA4D26003F6409 /* OverviewNavBar.swift in Sources */,
 				83B7035F2ABFF90C00F6E443 /* MonthlyPerformanceView.swift in Sources */,
+				836805272AC4B41400DB477B /* TrainingCellView.swift in Sources */,
 				836CCCD82AA8F2E8003F6409 /* UIView + ext.swift in Sources */,
 				83B7035C2ABFE73200F6E443 /* DailyPerfomanceView.swift in Sources */,
 				835260972AB5790A00F8F569 /* WABarsView.swift in Sources */,

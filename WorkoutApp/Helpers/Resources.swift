@@ -82,6 +82,11 @@ enum R {
             static let add = UIImage(named: "add_button")
         }
         
+        enum Overview {
+            static let  rightArrow = UIImage(named: "right_arrow")
+            static let  emptyCircle = UIImage(named: "empty_circle")
+            static let  checked = UIImage(named: "checked")
+        }
         
         enum Session {
             enum Stats {
