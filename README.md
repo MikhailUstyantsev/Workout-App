@@ -17,3 +17,12 @@ When implementing a screen with a timer, the UIBezierPath and CAShapeLayer class
 All string literals and colors are placed in a separate file.
 
 Link to design layout https://www.sketchappsources.com/free-source/4298-workout-tracking-app-sketch-freebie-resource.html
+
+
+<div align="center">
+  <img src="https://github.com/MikhailUstyantsev/trello-like-app/blob/main/AppDemo.gif" width="250" />
+</div>
+
+<p align="center">
+  User Interface demo
+</p>
