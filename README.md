@@ -18,11 +18,34 @@ All string literals and colors are placed in a separate file.
 
 Link to design layout https://www.sketchappsources.com/free-source/4298-workout-tracking-app-sketch-freebie-resource.html
 
-
 <div align="center">
-  <img src="https://github.com/MikhailUstyantsev/trello-like-app/blob/main/AppDemo.gif" width="250" />
+  <img src="https://github.com/MikhailUstyantsev/Workout-App/blob/main/OverviewScreen.png" width="250" />
 </div>
 
 <p align="center">
-  User Interface demo
+  Overview Screen demo
+</p>
+
+<div align="center">
+  <img src="https://github.com/MikhailUstyantsev/Workout-App/blob/main/SessionScreen.png" width="250" />
+</div>
+
+<p align="center">
+  Session Screen demo
+</p>
+
+<div align="center">
+  <img src="https://github.com/MikhailUstyantsev/Workout-App/blob/main/ProgreesScreen.png" width="250" />
+</div>
+
+<p align="center">
+  Progress Screen demo
+</p>
+
+<div align="center">
+  <img src="https://github.com/MikhailUstyantsev/Workout-App/blob/main/WorkoutAppDemo.gif" width="250" />
+</div>
+
+<p align="center">
+  Session Screen demo
 </p>
