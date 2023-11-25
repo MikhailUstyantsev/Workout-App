@@ -23,7 +23,7 @@ Link to design layout https://www.sketchappsources.com/free-source/4298-workout-
 </div>
 
 <p align="center">
-  Overview Screen demo
+  Overview Screen 
 </p>
 
 <div align="center">
@@ -31,7 +31,7 @@ Link to design layout https://www.sketchappsources.com/free-source/4298-workout-
 </div>
 
 <p align="center">
-  Session Screen demo
+  Session Screen
 </p>
 
 <div align="center">
@@ -39,7 +39,7 @@ Link to design layout https://www.sketchappsources.com/free-source/4298-workout-
 </div>
 
 <p align="center">
-  Progress Screen demo
+  Progress Screen
 </p>
 
 <div align="center">
